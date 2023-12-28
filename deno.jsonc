@@ -1,8 +1,7 @@
 {
   "tasks": {
-    "build": "cd spa && deno task build && mv dist ../app/build",
-    "start": "cd app && deno run -A --unstable main.ts",
-    "dev": "cd spa && deno task dev"
+    "build": "cd spa && npm i && npm run build && mv dist ../app/build",
+    "start": "cd app && deno run -A --unstable main.ts"
   },
   "exclude": [
     "*/node_modules",
