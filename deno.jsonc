@@ -1,0 +1,14 @@
+{
+  "tasks": {
+    "build": "cd spa && deno task build && mv dist ../app/build",
+    "start": "deno run -A --unstable app/main.ts",
+    "dev": "cd spa && deno task dev"
+  },
+  "exclude": [
+    "*/node_modules",
+    "*/dist",
+    "*/.vite",
+    "*/.vscode",
+    "app/build"
+  ]
+}
