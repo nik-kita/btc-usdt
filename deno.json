@@ -8,6 +8,7 @@
     "build": "deno run -A dev.ts build",
     "preview": "deno run -A main.ts",
     "update": "deno run -A -r https://fresh.deno.dev/update .",
+    "install": "deno install --allow-scripts",
     "pr": {
       "description": "Shortcut to create PR and merge dev branch into main",
       "dependencies": ["manifest", "build", "check"],
